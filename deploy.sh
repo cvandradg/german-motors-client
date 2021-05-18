@@ -20,6 +20,6 @@ git commit -m 'deploy'
 # git push -f https://github.com/cvandradg/german-motors.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:https://github.com/cvandradg/german-motors-client.git master:gh-pages
+git push -f git@github.com:cvandradg/german-motors-client.git master:gh-pages
 
 cd -
