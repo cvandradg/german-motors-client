@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "sh deploy.sh"
+    "deploy": "node scripts/deploy.sh"
   },
   "dependencies": {
     "babel-eslint": "^10.1.0",
@@ -29,6 +29,7 @@
     "babel-plugin-component": "^1.1.1",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "execa": "lastest"
   }
 }
