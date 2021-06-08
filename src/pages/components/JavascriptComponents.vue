@@ -8,6 +8,9 @@
           <n-button type="primary" @click.native="modals.classic = true">
             Launch Modal
           </n-button>
+          <n-button type="primary" @click.native="modals.classic = true">
+            Launch Calendar
+          </n-button>
           <n-button type="warning" @click.native="modals.mini = true">
             Launch Modal Mini
           </n-button>
@@ -134,14 +137,14 @@
     <!-- Classic Modal -->
     <modal :show.sync="modals.classic" headerClasses="justify-content-center">
       <h4 slot="header" class="title title-up">Modal title</h4>
-      <p>
-        Far far away, behind the word mountains, far from the countries Vokalia
-        and Consonantia, there live the blind texts. Separated they live in
-        Bookmarksgrove right at the coast of the Semantics, a large language
-        ocean. A small river named Duden flows by their place and supplies it
-        with the necessary regelialia. It is a paradisematic country, in which
-        roasted parts of sentences fly into your mouth.
-      </p>
+      <div>
+        <vc-calendar 
+          ref="calendar"
+          is-expanded
+          :min-date="new Date()"
+          trim-weeks
+        />
+      </div>
       <template slot="footer">
         <n-button>Nice Button</n-button>
         <n-button type="danger" @click.native="modals.classic = false"

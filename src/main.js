@@ -19,10 +19,15 @@ import App from './App.vue';
 // You can change this import to `import router from './starterRouter'` to quickly start development from a blank layout.
 import router from './router';
 import NowUiKit from './plugins/now-ui-kit';
+import VCalendar from 'v-calendar';
 
 Vue.config.productionTip = false;
 
 Vue.use(NowUiKit);
+Vue.use(VCalendar, {
+  componentPrefix: 'vc',
+});
+
 
 new Vue({
   router,
